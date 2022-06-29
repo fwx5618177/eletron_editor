@@ -1,0 +1,15 @@
+.layout_btn {
+    padding: .2em .6em;
+    background-color: #383838;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.layout_btn:hover {
+    transform: translateY(-2px);
+}
+
+.layout_btn:active {
+    transform: translateY(2px);
+}
