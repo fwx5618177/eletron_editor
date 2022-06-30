@@ -1,9 +1,104 @@
+* {
+    padding:0px !important;
+    margin:0px !important;
+    box-sizing: border-box;
+
+}
+
+.layout_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/images/login_bg_2_small.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.layout_login, .layout_bg {
+    height:inherit;
+    overflow-x: hidden;
+}
+
+.layout_login {
+    padding-left: 15px !important;
+    width:35%;
+    max-width: 350px;
+    background-color: rgba(255,255,255,1);
+    /* background-color: #f0f0f0; */
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: .5px solid rgba(179, 177, 177, 0.9);
+
+    box-shadow: 2px 2px 2px 0px rgba(173, 173, 173, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout_bg {
+    width: 70%;
+}
+
+.layout_bg h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size:45px;
+    text-align:center;
+    font-family: fantasy;
+    user-select: none;
+}
+
+.layout_login h3 {
+    color: #40a9ff;
+    margin-bottom: 15px !important;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: fantasy;
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
+
+    animation: titleInsert 2.8s 1 backwards;
+
+}
+
+@keyframes titleInsert {
+    from {
+        transform: translateX(0px);
+    }
+
+    25%  {
+        transform: translateX(-40px);
+    }
+
+    50%  {
+        transform: translateX(20px);
+    }
+
+    to  {
+        transform: translateX(40px);
+    }
+}
+
 .layout_btn {
-    padding: .2em .6em;
-    background-color: #383838;
+    display: inline-block;
+    width:100px;
+    padding: .4em .4em !important;
+    color: #fff;
+    background-color: #1890ff;
     cursor: pointer;
     text-align: center;
     border-radius: 5px;
+
+    user-select: none;
 }
 
 .layout_btn:hover {
@@ -12,4 +107,19 @@
 
 .layout_btn:active {
     transform: translateY(2px);
+}
+
+.layout_login_form > label {
+    
+    margin-bottom: 25px !important;
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.layout_login_form_input {
+    width: 100%;
+    margin: 0px 5px !important;
+    border: 1px solid #d9d9d9;
 }

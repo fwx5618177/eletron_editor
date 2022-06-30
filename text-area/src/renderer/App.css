@@ -2,7 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-:root {
+/* :root {
   position: relative;
   color: white;
   height: 100vh;
@@ -17,4 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+@import url('antd/dist/antd.css');
+

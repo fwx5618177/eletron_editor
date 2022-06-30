@@ -18,4 +18,7 @@ contextBridge.exposeInMainWorld('electron', {
       ipcRenderer.once(channel, (_event, ...args) => func(...args));
     },
   },
+  contextIsolation: false,
+  nodeIntegration: true,
+  nodeIntegrationInWorker: true,
 });
