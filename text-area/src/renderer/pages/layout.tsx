@@ -25,6 +25,15 @@ const Layout = () => {
                 className="layout_login_form_password layout_login_form_input"
               />
             </label>
+
+            <label htmlFor="date" className="layout_login_form_label">
+              <span>date</span>
+              <input
+                id="date"
+                type="date"
+                className="layout_login_form_date layout_login_form_input"
+              />
+            </label>
           </div>
 
           <div className="layout_btn">Submit</div>
