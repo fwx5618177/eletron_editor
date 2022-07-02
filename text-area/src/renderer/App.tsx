@@ -1,10 +1,13 @@
 import {
-  MemoryRouter as Router,
+  BrowserRouter as Router,
+  // MemoryRouter as Router,
   Routes,
   Route,
   Outlet,
+  Navigate,
 } from 'react-router-dom';
 import './App.css';
+import TextEditor from './pages/dashboard/text';
 import Layout from './pages/layout';
 
 export default function App() {
@@ -13,7 +16,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Outlet />}>
           <Route index element={<Layout />} />
-          <Route path="dashboard" element={<>2</>} />
+          <Route path="/dashboard" element={<Outlet />}>
+            <Route index element={<Navigate to="/dashboard/text" />} />
+            <Route path="text" element={<TextEditor />} />
+          </Route>
+          <Route path="*" element="404" />
         </Route>
       </Routes>
     </Router>
