@@ -1,0 +1,40 @@
+.text_editor {
+    margin: 16px !important;
+    width: 100%;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text_editor > * {
+    width:50%;
+    height: 60vh !important;
+    user-select: none;
+}
+
+.text_textarea, textarea {
+    background-color: #e8e;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.text_textarea:focus {
+    outline: none;
+    border: 1.5px solid #1890ff;
+}
+
+.text_performance {
+    margin: 0 20px 0 5px !important;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+.text_performance:hover {
+    border: 1.5px solid #1890ff;
+    border-radius: 5px;
+}
