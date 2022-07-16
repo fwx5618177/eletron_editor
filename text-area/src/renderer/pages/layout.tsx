@@ -31,7 +31,7 @@ const Layout = () => {
               <Col span={24}>
                 <Form.Item
                   name="username"
-                  label="Username"
+                  label="用户名"
                   rules={[
                     {
                       required: true,
@@ -52,7 +52,7 @@ const Layout = () => {
               <Col span={24}>
                 <Form.Item
                   name="password"
-                  label="Password"
+                  label="密码"
                   rules={[
                     {
                       required: true,

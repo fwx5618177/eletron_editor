@@ -16,8 +16,8 @@
 }
 
 .text_textarea, textarea {
-    background-color: #e8e !important;
-    color: #fff !important;
+    /* background-color: #e8e !important; */
+    /* color: #fff !important; */
     height: 80vh !important;
     border: none;
     border-radius: 5px;
@@ -35,10 +35,51 @@
     margin: 0 20px 0 5px !important;
     background-color: #fff;
 
+    white-space: break-spaces;
     cursor: pointer;
 }
 
 .text_performance:hover {
     border: 1.5px solid #1890ff;
     border-radius: 5px;
+}
+
+header > h3 {
+  margin: 16px !important;
+}
+
+.text_color_select {
+  margin: 16px !important;
+  /* display: flex;
+  justify-content:flex-start;
+  align-items: center; */
+}
+
+.text_color_selector_swatch {
+  margin-left: 5px !important;
+  padding: 5px !important;
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.text_color_selector_popover {
+  position: absolute;
+  z-index: 2;
+}
+
+.text_color_selector_cover {
+  position:fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.text_color_selector_color {
+  width: 36px;
+  height:14px;
+  border-radius:2px;
 }
